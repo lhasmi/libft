@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhasmi <lhasmi@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:52:07 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/04/26 16:02:19 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/05/21 00:35:16 by lailah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,35 +23,33 @@ char	*ft_strnstr(const char * haystack, const char * needle, size_t len)
 {
 	size_t	nlen;
 	size_t	i;
-    size_t	j;
+    size_t	hlen;
 	char*	hay;
 	char*	nee;
 
 	hay = ((char *)haystack);
 	nee = ((char *)needle);
 	nlen = ft_strlen(nee);
+    hlen = ft_strlen(hay);
     if (nee[0] == '\0')
         return (hay);
-    i = 0;
-    while (hay[i] != '\0' && i < len )
+    if (hlen < nlen || len < nlen)
+        return (0);
+    while (hay && len)
     {
-        if (ft_strchr ((const char *)hay, nee[0]))
-            j = 0;
-            while (nee[j])
+            if (!ft_strncmp((const char *)hay, (const char *)nee, nlen))
             {
-                if (!ft_strncmp((const char *)hay, (const char *)nee, nlen))
-                    return (&nee[j]);
-                j++;
+                if (len >= nlen)
+                    return (hay);
             }
-        i++;
+        hay++;
+        len--;
     }
     return (NULL);
 }
 
 
-
-
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 int main()
@@ -106,7 +104,7 @@ int main()
     // printf("pointer to nee trough strnstr : %p, the needle is:  %s\n", str7, str7);
     // printf("pointer to nee trough strnstr : %p, the needle is:  %s\n", str8, str8);
     // printf("pointer to nee trough strnstr : %p, the needle is:  %s\n", str9, str9);
-}
+}*/
 
 /*
 Strnstr
