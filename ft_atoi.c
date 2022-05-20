@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 11:28:33 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/05/14 22:42:37 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/05/21 01:13:14 by lailah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,14 +41,10 @@ int	ft_atoi(const char *str)
 	while (s[i] == (' ') || is_space(s[i]))
 		i++;
 	sign = 1;
-	if (s[i] == ('-'))
+	if (s[i] == ('-') || s[i] == ('+'))
 	{
-		sign = -1;
-		i++;
-	}
-	if (s[i] == ('+'))
-	{
-		sign = 1;
+		if (s[i] == ('-'))
+			sign = -1;
 		i++;
 	}
 	output = 0;
@@ -61,8 +57,8 @@ int	ft_atoi(const char *str)
 	return (output);
 }
 
-#include<stdio.h>
-int	main()
-{
-	printf("%d\n", ft_atoi("+-42"));
-}
+// #include<stdio.h>
+// int	main()
+// {
+// 	printf("%d\n", ft_atoi("+-42"));
+// }
