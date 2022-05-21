@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhasmi <lhasmi@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:49:00 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/04/14 18:33:17 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/05/21 16:55:44 by lailah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,12 @@ size_t	ft_strlcat(char * dst, const char * src, size_t dstsize)
 	lensrc = ft_strlen(src);
 	if (!dst || dstsize == 0)
 		return (lensrc);
-
-	if (src[0] == '\0')
-		return (dstsize);
-	if (!src && (dstsize >= lendst))
-		return (lendst);
+	// if (src[0] == '\0' && (dstsize >= lendst))
+	// printf("after condition test10\n");
+	// 	return (lendst);
+	// if (src[0] == '\0')
+	// 	return (dstsize);
+	printf("after condition src empty\n");
 	i = lendst;
 	j = 0;
 	while (srce[j] && (i < dstsize -1))
@@ -47,16 +48,40 @@ size_t	ft_strlcat(char * dst, const char * src, size_t dstsize)
 	return (lendst + lensrc);
 }
 
+
+// #include <string.h>
+// int main()
+// {
+// char dest[30]; 
+// // int	destlen;
+// memset(dest, 0, 30); memset(dest, '1', 10);
+// printf("output of my ft_* is: %zu", ft_strlcat(dest, "", 15));
+// }
+
+
+
+
 // cat dog 10
 // catdog\0 6 -> buffer[6] = '\0' if dstsize > dst + src
 
 // cat dog 5
 // catd\0 -> buffer[4] = '\0' if dstsize < dst + src
+//////////LIBFTTESTER///////////////////////////////////////////////
+// char dest[30]; memset(dest, 0, 30);
+// char * src = (char *)"AAAAAAAAA";
+// 	dest[0] = 'B';
+	
+// memset(dest, 0, 30); memset(dest, '1', 10);
+// /* 10 */ check(ft_strlcat(dest, "", 15) == 10 && !strcmp(dest, "1111111111")); showLeaks();
+// memset(dest, 0, 30);
+// /* 11 */ check(ft_strlcat(dest, "", 42) == 0 && !strcmp(dest, "")); showLeaks();
+// memset(dest, 0, 30);
 
-#include <string.h>
+// #include <string.h>
 // int main()
 // {
-// 	// char dest[20] = "WOOG";
+// 	char dest[30] = "WOOG";
+// 	char * src = (char *)"AAAAAAAAA";
 // 	// char src[20] = "abc";
 // 	// size_t n = 5;
 // 	// unsigned long test0;
@@ -64,7 +89,7 @@ size_t	ft_strlcat(char * dst, const char * src, size_t dstsize)
 // 	// unsigned long test2;
 // 	// unsigned long test3;
 // 	// unsigned long test4;
-// 	unsigned long test;
+// 	// unsigned long test;
 // 	// unsigned long test5;
 // 	// unsigned long test6;
 // 	// printf("%s\n", ft_strncat(dest, src, n)); strlendest + strlensrc = 7
@@ -73,30 +98,30 @@ size_t	ft_strlcat(char * dst, const char * src, size_t dstsize)
 // 	// char dest2[20] = "WOOG";//destsize == 0
 // 	// char dest3[20] = "WOOG";//destsize < strlendest + strlensrc
 // 	// char dest4[20] = "WOOG";//destsize = strlendest + strlensrc
-// 	char dest[3084] = "there is no stars in the sky";//all good
+// 	// char dest[3084] = "there is no stars in the sky";//all good
 // 	// char src0[20] = "abc";//!dest
 // 	// char src1[20] = "";//!src
 // 	// char src2[20] = "abc";//no destsize
 // 	// char src3[20] = "abc";//destsize < strlendest + strlensrc
 // 	// char src4[20] = "abc";//destsize = strlendest + strlensrc
-// 	char src[3084] = "the cake is a lie !\0I'm hidden lol\r\n";//all good
-// 	test0 = ft_strlcat(dest0, src0, 10);
-// 	printf("len of returned dest if !dest: %lu, destination: %s\n", test0, dest0);
+// 	// char src[3084] = "the cake is a lie !\0I'm hidden lol\r\n";//all good
+// 	// test0 = ft_strlcat(dest0, src0, 10);
+// 	// printf("len of returned dest if !dest: %lu, destination: %s\n", test0, dest0);
 
-// 	test1 = ft_strlcat(dest1, src1, 4);
-// 	printf("len of returned dest !src: %lu, destination: %s\n", test1, dest1);
+// 	// test1 = ft_strlcat(dest1, src1, 4);
+// 	// printf("len of returned dest !src: %lu, destination: %s\n", test1, dest1);
 
-// 	test2 = ft_strlcat(dest2, src2, 0);
-// 	printf("destsize == 0: %lu, destination: %s\n", test2, dest2);
+// 	// test2 = ft_strlcat(dest2, src2, 0);
+// 	// printf("destsize == 0: %lu, destination: %s\n", test2, dest2);
 
-// 	test3 = ft_strlcat(dest3, src3, 5);
-// 	printf("destsize < strlendest + strlensrc: %lu, destination: %s\n", test3, dest3);
+// 	// test3 = ft_strlcat(dest3, src3, 5);
+// 	// printf("destsize < strlendest + strlensrc: %lu, destination: %s\n", test3, dest3);
 
-// 	test4 = ft_strlcat(dest4, src4, 7);
-// 	printf("destsize = strlendest + strlensrc: %lu, destination: %s\n", test4, dest4);
+// 	// test4 = ft_strlcat(dest4, src4, 7);
+// 	// printf("destsize = strlendest + strlensrc: %lu, destination: %s\n", test4, dest4);
 
-// 	test = strlcat(dest, src, 100);
-// 	printf("len of returned dest: %lu, destination: %s\n", test, dest);
+// 	// test = strlcat(dest, src, 100);
+// 	// printf("len of returned dest: %lu, destination: %s\n", test, dest);
 // }
 
 /*
