@@ -3,44 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhasmi <lhasmi@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 22:19:22 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/04/26 14:55:14 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/05/21 20:38:22 by lailah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//char *strrchr(cs,c) return pointer to last occurrence of c in cs or NULL if not present.
-/*the loop will run if location is c if it is equal to c as first occurence from the end of the
-	string
-	1-start the loop from the end : i=
-	*/
 #include "libft.h"
-
 
 char *ft_strrchr(const char *s, int c)
 {
-	char *temp;
-	int count;
+	char *str;
+	int counter;
 	int i;
 
-	temp = ((char *)s);
-	count = ft_strlen (s);
+	str = ((char *)s);
+	counter = ft_strlen (s);
 	if (c == '\0')
-		return (&temp[count]);
-	i = count - 1;
+		return (&str[counter]);
+	i = counter - 1;
 	while (i >= 0)
 	{
-		if (temp[i] == c)
-			return (temp + i);
+		if (str[i] == (char)c)
+			return (str + i);
 		i--;
 	}
-
     return (0);
 }
 
-// #include<stdio.h>
-// int main()
-// {
-//     printf("%s\n", ft_strrchr("lailab", '\0'));
-// }
