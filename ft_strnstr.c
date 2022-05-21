@@ -6,7 +6,7 @@
 /*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:52:07 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/05/21 00:35:16 by lailah           ###   ########.fr       */
+/*   Updated: 2022/05/21 17:44:12 by lailah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ The function needs to use the variables we increment not the ones that are "cons
 char	*ft_strnstr(const char * haystack, const char * needle, size_t len)
 {
 	size_t	nlen;
-	size_t	i;
     size_t	hlen;
 	char*	hay;
 	char*	nee;

@@ -6,7 +6,7 @@
 /*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:49:00 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/05/21 16:55:44 by lailah           ###   ########.fr       */
+/*   Updated: 2022/05/21 17:41:30 by lailah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ size_t	ft_strlcat(char * dst, const char * src, size_t dstsize)
 	// 	return (lendst);
 	// if (src[0] == '\0')
 	// 	return (dstsize);
-	printf("after condition src empty\n");
+	//printf("after condition src empty\n");
 	i = lendst;
 	j = 0;
 	while (srce[j] && (i < dstsize -1))

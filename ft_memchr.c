@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:53:21 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/04/10 21:18:31 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/05/21 17:49:05 by lailah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ RETURN VALUES
 
 void * ft_memchr(const void *s, int c, size_t n)
 {
-	int	i;
+	size_t	i;
 	char	*str;
 
 	str = (char	*)s;
