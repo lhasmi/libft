@@ -6,7 +6,7 @@
 /*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 21:52:08 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/05/20 13:54:12 by lailah           ###   ########.fr       */
+/*   Updated: 2022/05/21 21:49:10 by lailah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-//ALWAYS COMPILE ALL called FUNCTIONS !!!!!!!!!!!!!!!!!
 /*Testing characters functions */
 int		ft_isalpha(int a);
 int		ft_isdigit(int d);
@@ -55,4 +54,9 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 //allocates space for count objects ( 4 int or 4 char) that are size bytes
 // of memory each : (sizeof) int oder sizeof (char)
 void	*ft_calloc(size_t count, size_t size);
+
+/*Part 2:*/
+// Allocates (with malloc(3)) and returns a substring from the string ’s’. The substring begins at 
+// index ’start’ and is of maximum size ’len’.
+char *ft_substr(char const *s, unsigned int start, size_t len);
 #endif
