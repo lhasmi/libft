@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 21:52:08 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/05/21 21:49:10 by lailah           ###   ########.fr       */
+/*   Updated: 2022/05/24 20:23:13 by lhasmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	*ft_memcpy(void	*dst, const void	*src, size_t	n);
 //copies len bytes from src to dst.  The two may overlap; the copy is always done
 //in a nondestructive manner.
 void	*ft_memmove(void *dst, const void *src, size_t len);
-//compare the first n characters of cs with ct; return as with strcmp. 
+//compare the first n characters of cs with ct; return as with strcmp.
 void	*ft_memchr(const void *s, int c, size_t n);
 //compares byte string s1 against byte string s2. Both strings are assumed to be n bytes long.
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
@@ -56,7 +56,8 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 
 /*Part 2:*/
-// Allocates (with malloc(3)) and returns a substring from the string ’s’. The substring begins at 
+// Allocates (with malloc(3)) and returns a substring from the string ’s’. The substring begins at
 // index ’start’ and is of maximum size ’len’.
 char *ft_substr(char const *s, unsigned int start, size_t len);
+char *ft_strjoin(char const *s1, char const *s2);
 #endif
