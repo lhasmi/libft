@@ -6,7 +6,7 @@
 /*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 21:52:08 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/05/27 21:54:50 by lailah           ###   ########.fr       */
+/*   Updated: 2022/05/27 22:29:25 by lailah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,5 +60,6 @@ void	*ft_calloc(size_t count, size_t size);
 // index ’start’ and is of maximum size ’len’.
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
+//Allocates and returns a copy of ’s1’ with the characters specified in ’set’ removed
 char	*ft_strtrim(char const *s1, char const *set);
 #endif
