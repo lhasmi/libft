@@ -3,20 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 12:43:09 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/04/08 17:17:45 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/05/27 21:55:40 by lailah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-// char *ft_strtrim(char const *s1, char const *set)
-// {
-// return ();
+char *ft_strtrim(char const *s1, char const *set)
+{
+char	*trimd;
 
-// return(0);
-// }
+return (trimd);
+
+return(0);
+}
 
 /* s1: The string to be trimmed.
 set: The reference set of characters to trim.

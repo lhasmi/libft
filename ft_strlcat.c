@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:49:00 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/05/21 20:17:45 by lailah           ###   ########.fr       */
+/*   Updated: 2022/05/24 21:51:37 by lhasmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ size_t	ft_strlcat(char * dst, const char * src, size_t dstsize)
 		i++;
 		j++;
 	}
-	if( dstsize >= lendst)
+	if (dstsize >= lendst)
 		dst[i] = '\0';
 	if (dstsize < lendst)
 		return (dstsize + lensrc);
