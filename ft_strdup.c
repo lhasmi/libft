@@ -3,20 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:53:42 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/04/12 15:54:26 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/05/29 12:10:09 by lailah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*allocates sufficient memory for a copy of the string s1, does the copy, and
-    //returns a pointer to it.
-    //The pointer may subsequently be used as an argument to the function
-    free(3).
-
-    //If insufficient memory is available, NULL is returned and errno
-		set to ENOMEM.*/
 
 #include "libft.h"
 
