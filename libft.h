@@ -6,7 +6,7 @@
 /*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 21:52:08 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/05/29 12:23:20 by lailah           ###   ########.fr       */
+/*   Updated: 2022/05/31 16:05:30 by lailah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,6 @@ void	*ft_calloc(size_t count, size_t size);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 //Allocates (use malloc) and returns a new string, which is the result of the concatenation of ’s1’ and ’s2
 char	*ft_strjoin(char const *s1, char const *s2);
-//Allocates and returns a copy of ’s1’ with the characters specified in ’set’ removed
+//Allocates and returns a copy of ’s1’ with the characters specified in ’set’ removed from Beg and the end
 char	*ft_strtrim(char const *s1, char const *set);
 #endif

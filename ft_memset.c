@@ -3,18 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:53:07 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/04/11 17:26:22 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/06/01 12:53:40 by lailah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*writes len bytes of value c (converted to an unsigned char) to the string b.
-* returns its first argument.https://www.geeksforgeeks.org/c-program-to-insert-
-	an-element-in-an-array/
-//placing the int c inside of each index position.
-// We decrement len and start the loop again*/
 #include"libft.h"
 
 void	*ft_memset(void	*b, int c, size_t len)
