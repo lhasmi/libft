@@ -6,7 +6,7 @@
 /*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 21:52:08 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/05/31 16:05:30 by lailah           ###   ########.fr       */
+/*   Updated: 2022/06/01 16:09:59 by lailah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,4 +76,5 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 //Allocates and returns a copy of ’s1’ with the characters specified in ’set’ removed from Beg and the end
 char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
 #endif

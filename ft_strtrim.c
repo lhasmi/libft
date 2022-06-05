@@ -6,7 +6,7 @@
 /*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 12:43:09 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/06/01 15:52:10 by lailah           ###   ########.fr       */
+/*   Updated: 2022/06/01 16:04:50 by lailah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include"libft.h"
 
-char	*stralloc (char	*s1, size_t	len)
+char	*stralloc (char	const*s1, size_t	len)
 {
 	char	*s1trimed;
 
@@ -22,6 +22,7 @@ char	*stralloc (char	*s1, size_t	len)
 	if (!s1trimed)
 		return (NULL);
 	s1trimed = ft_memcpy(s1trimed, s1, len);
+	*(s1trimed + len) = '\0';
 	return (s1trimed);
 }
 
@@ -46,16 +47,3 @@ if(i < s1len2)
 else
 	return (stralloc (s1, s1len2));
 }
-
-// int main()
-// {
-// 	char	*s1 = "   xxx   xxx";
-// 	//char	*s2 = "Hello \t  Please\n Trim me !";
-// 	char	*set = " x";
-// 	char	*returnval = ft_strtrim(s1, set);
-
-// 	printf("Ret: %s\n", returnval);
-// 	// char buffer2[1000] = "there is no stars in the sky";
-// 	// size_t ret2 = ft_strlcat(buffer2, str, strlen(str) + 4);
-// 	// printf("Ret: %zu, buffer: %s\n", ret2, buffer2);
-// }
