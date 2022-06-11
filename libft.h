@@ -6,7 +6,7 @@
 /*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 21:52:08 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/06/01 16:09:59 by lailah           ###   ########.fr       */
+/*   Updated: 2022/06/11 19:06:26 by lailah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,4 +77,12 @@ char	*ft_strjoin(char const *s1, char const *s2);
 //Allocates and returns a copy of ’s1’ with the characters specified in ’set’ removed from Beg and the end
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
+//Allocates and returns a string representing integer received as argument.Negative numbers must be handled.
+char	*ft_itoa(int n);
+//Applies function ’f’ to each character of ’s’, passes its index as first argument to create a new str 
+//(with malloc) resulting from successive applications of ’f’.
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+//Applies ’f’ on each character of s passed as argument, passes its index as first argument. Each character 
+//is passed by address to ’f’ to be modified if necessary.
+void ft_striteri(char *s, void (*f)(unsigned int, char*));
 #endif
