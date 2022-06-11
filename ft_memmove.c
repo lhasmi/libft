@@ -6,7 +6,7 @@
 /*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:53:11 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/04/12 23:34:07 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/06/12 01:27:50 by lhasmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char	*s;
 	unsigned char	*d;
-	int	i;
+	int				i;
 
 	s = ((unsigned char *)src);
 	d = ((unsigned char *)dst);

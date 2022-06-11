@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 11:28:33 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/05/21 01:13:14 by lailah           ###   ########.fr       */
+/*   Updated: 2022/06/12 01:15:05 by lhasmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,9 +56,3 @@ int	ft_atoi(const char *str)
 	output = sign * output;
 	return (output);
 }
-
-// #include<stdio.h>
-// int	main()
-// {
-// 	printf("%d\n", ft_atoi("+-42"));
-// }

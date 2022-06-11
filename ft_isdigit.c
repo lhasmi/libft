@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhasmi <lhasmi@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 20:05:08 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/03/28 15:33:04 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/06/12 01:18:46 by lhasmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,3 @@ int	ft_isdigit(int c)
 		return (c);
 	return (0);
 }
-
-/*#include<stdio.h>
-
-int main()
-{
-	printf("%d\n", ft_isdigit(23));
-}*/
