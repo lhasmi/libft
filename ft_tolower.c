@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:52:28 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/06/01 16:07:56 by lailah           ###   ########.fr       */
+/*   Updated: 2022/06/12 12:59:12 by lhasmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* -- upper case to lower case letter conversion*/
 #include "libft.h"
 
 int	ft_tolower(int c)

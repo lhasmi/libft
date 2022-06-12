@@ -6,23 +6,20 @@
 /*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 11:28:33 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/06/12 01:15:05 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/06/12 17:44:12 by lhasmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*The atoi() function converts the initial portion of the string pointed to by
-	str to int representation.*/
-
 #include "libft.h"
 
-int	is_space(char c)
+static int	is_space(char c)
 {
 	if (c >= '\t' && c <= '\r')
 		return (1);
 	return (0);
 }
 
-int	is_digit(int c)
+static int	is_digit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (c);

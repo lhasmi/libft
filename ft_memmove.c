@@ -6,33 +6,24 @@
 /*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:53:11 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/06/12 01:27:50 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/06/12 14:27:05 by lhasmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-#include <string.h>
-#include <stdio.h>
-// #define PRINT_HERE() (printf("%s file, %d line\n", __FILE__, __LINE__))
-// #define LOG(x) (printf("%p\n", x))
-// #define LOG2(y) (printf("%s\n", y))
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char	*s;
-	unsigned char	*d;
-	int				i;
+	int	i;
 
-	s = ((unsigned char *)src);
-	d = ((unsigned char *)dst);
-	if (!s && !d)
+	if (!(unsigned char *)src && !(unsigned char *)dst)
 		return (0);
 	if (src < dst)
 	{
 		i = (int)len -1;
-		while (i >= 0 )
+		while (i >= 0)
 		{
-			d[i] = s[i];
+			((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
 			i--;
 		}
 	}
@@ -41,20 +32,9 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		i = 0;
 		while (i < (int)len)
 		{
-			d[i] = s[i];
+			((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
 			i++;
 		}
 	}
 	return (dst);
 }
-
-// int main()
-// {
-// 	char	s[50] = "abcde";
-
-// 	//ft_memmove(s + 2, s, 3);
-// 	memmove(s + 2, s, 3);
-// 	printf("%s\n", s);
-// 	//printf("%s\n", s);
-// 	return (0);
-// }

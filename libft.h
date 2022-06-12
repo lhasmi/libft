@@ -6,7 +6,7 @@
 /*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 21:52:08 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/06/12 01:14:00 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/06/12 13:38:40 by lhasmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,11 +62,11 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 //allocates space for count objects are size bytes of memory each :
 //(sizeof) int oder sizeof (char)
 void	*ft_calloc(size_t count, size_t size);
+
 ///////////
 /*Part 2:*/
 // Allocates (with malloc) and returns a substring from the string ’s’.
-//Substring begins at index ’start’
-// and is of maximum size ’len’.
+//Substring begins at index ’start’ and is of maximum size ’len’.
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 //Allocates (use malloc) and returns a new string, which is the result
 //of the concatenation of ’s1’ and ’s2

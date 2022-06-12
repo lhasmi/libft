@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:53:42 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/05/29 12:10:09 by lailah           ###   ########.fr       */
+/*   Updated: 2022/06/12 17:45:33 by lhasmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,19 +29,3 @@ char	*ft_strdup(const char *s1)
 	result[i] = '\0';
 	return (result);
 }
-
-// #include<stdio.h>
-// #include<string.h>
-// #include <assert.h>
-// #include <stdlib.h>
-
-// int	main()
-// {
-// 	const char *s1 = "Halli Hallo";
-// 	const char *s2 = "Keine Entwicklung ohne Leiden!";
-//     printf("strdup\t\t= %s\n", strdup(s1));
-//     printf("ft_strdup\t= %s\n", ft_strdup(s1));
-//     printf("strdup\t\t= %s\n", strdup(s2));
-//     printf("ft_strdup\t= %s\n", ft_strdup(s2));
-
-// }

@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lailah <lailah@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:53:36 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/06/11 16:37:31 by lailah           ###   ########.fr       */
+/*   Updated: 2022/06/12 18:11:53 by lhasmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-#include <stdio.h>
 
 static size_t	counting(char const *s, char c, size_t *temp2)
 {
@@ -108,22 +107,9 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	buffer = malloc((temp2 + 1));
 	if (!buffer)
+	{
+		free(strings);
 		return (NULL);
+	}
 	return (copylloc(s, strings, buffer, c));
 }
-
-// int main()
-// {
-// 	char	*s1 = "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse";
-// 	//char	*s2 = "Hello \t  Please\n Trim me !";
-// 	char	set = ' ';
-// 	char	**returnval;
-// 	returnval = ft_split(s1, set);
-
-// for (int i = 0; returnval[i]; i++)// print out the substrings, which should be each word of the sentence above
-//     printf("%s\n", returnval[i]);
-// for (int i = 0; returnval[i]; i++)// print out the substrings, which should be each word of the sentence above
-//     free(returnval[i]);
-//   free(returnval);// free the dynamically allocated space for the array of pointers to strings
-// return 0;
-// }

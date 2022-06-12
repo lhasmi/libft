@@ -6,11 +6,9 @@
 /*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 14:14:08 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/06/12 01:29:17 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/06/12 18:14:16 by lhasmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*Tests if c is a printable character including the space.*/
 
 int	ft_isprint(int c)
 {

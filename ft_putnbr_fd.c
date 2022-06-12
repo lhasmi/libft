@@ -6,13 +6,11 @@
 /*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:53:28 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/06/12 00:54:27 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/06/12 18:14:54 by lhasmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-
-void	ft_putchar_fd(char c, int fd);
 
 void	ft_putnbr_fd(int n, int fd)
 {
