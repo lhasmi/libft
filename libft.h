@@ -6,7 +6,7 @@
 /*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 21:52:08 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/06/12 13:38:40 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/06/13 23:11:44 by lhasmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,4 +93,17 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 //Outputs the integer ’n’ to the given file descriptor.
 void	ft_putnbr_fd(int n, int fd);
+////////
+//BONUS :
+////////
+typedef struct s_list
+{
+	void *content;
+	struct s_list *next;
+} 	t_list;
+// Allocates (with malloc) and returns a new node. The member variable ’content’
+// is initialized with the value of  ’content’.  ’next’ initialized to NULL.
+t_list		*ft_lstnew(void *content);
+// Adds node ’new’ at the beginning of the list.
+void		ft_lstadd_front(t_list **lst, t_list *new);
 #endif

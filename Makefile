@@ -6,11 +6,11 @@
 #    By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/28 13:30:35 by lhasmi            #+#    #+#              #
-#    Updated: 2022/06/12 13:48:14 by lhasmi           ###   ########.fr        #
+#    Updated: 2022/06/13 23:05:03 by lhasmi           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-FLAG = -Wall -Wextra -Werror
+FLAG = -Wall -Wextra -Werror -O3
 OBJDIR = objdir
 OBJS = $(addprefix $(OBJDIR)/,$(SRC:.c=.o))
 NAME = libft.a
@@ -48,19 +48,24 @@ SRC =	ft_atoi.c\
 		ft_substr.c\
 		ft_tolower.c\
 		ft_toupper.c
+BONUSSRC =	ft_lstnew.c\
+			ft_lstadd_front.c\
 OBJ = $(SRC:.c=.o)
+BONUSOBJS=$(BONUSSRC:.c=.o)
 
 all: $(NAME)
 
-
 $(OBJDIR)/%.o:	%.c | $(OBJDIR)
-	gcc -c $^ -o $@
+	cc -c $(FLAG) $^ -o $@
 
 $(NAME): $(OBJS)
 	ar -crs $(NAME) $(OBJS)
 
 $(OBJDIR):
 	mkdir $@
+
+bonus : $(BONUSOBJS) $(OBJS)
+	ar rc $(NAME) $(BONUSOBJS) $(OBJ)
 clean:
 	rm -rf $(OBJDIR)
 

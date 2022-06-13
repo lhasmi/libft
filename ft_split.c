@@ -6,7 +6,7 @@
 /*   By: lhasmi <lhasmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:53:36 by lhasmi            #+#    #+#             */
-/*   Updated: 2022/06/12 18:11:53 by lhasmi           ###   ########.fr       */
+/*   Updated: 2022/06/12 20:59:25 by lhasmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,12 +97,10 @@ char	**ft_split(char const *s, char c)
 	char		**strings;
 	char		*buffer;
 	size_t		temp2;
-	size_t		count;
 
 	if (s == NULL)
 		return (NULL);
 	strings = (char **)malloc(sizeof(char *) * ((counting(s, c, &temp2)) + 1));
-	count = ((counting(s, c, &temp2)) + 1);
 	if (!strings)
 		return (NULL);
 	buffer = malloc((temp2 + 1));
